@@ -11,6 +11,7 @@ html{scroll-behavior:smooth;scroll-padding-top:88px}
 body{font-family:'Tajawal',system-ui,sans-serif;background:var(--bone);color:#2a2520;line-height:1.8}
 h1,h2,h3,.font-display{font-family:'Amiri','Tajawal',serif}
 h1,h2{line-height:1.35}
+.hero-title{line-height:1.6}
 img{background:#e6e0d6}
 
 /* Focus visible (accessibility) */
@@ -75,7 +76,7 @@ details.faq p{padding:0 1.4rem 1.2rem;color:#5b5147}
 .swiper-slide{height:auto!important}
 
 /* Floating buttons */
-.fab{position:fixed;z-index:40;inset-inline-start:1.25rem;bottom:1.25rem}
+.fab{position:fixed;z-index:40;left:1.25rem;bottom:1.25rem}
 #toTop{opacity:0;pointer-events:none;transition:opacity .3s}
 #toTop.show{opacity:1;pointer-events:auto}
 

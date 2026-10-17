@@ -2,7 +2,7 @@ window.SITE = {
   brand: "بيت الخشب للأثاث",
   tagline: "أثاث مصنوع ليعيش معك سنوات",
   phoneDisplay: "01015248015",
-  phoneIntl: "1015248015",
+  phoneIntl: "01015248015",
   email: "info@pitekheshab.com",
   address: "الشارع الرئيسي، المدينة، البلد",
   hours: "يومياً من 10 صباحاً حتى 10 مساءً",

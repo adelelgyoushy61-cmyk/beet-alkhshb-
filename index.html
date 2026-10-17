@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بيت الخشب للأثاث | غرف نوم، صالونات، سفرة ومكاتب</title>
+  <meta name="description" content="معرض أثاث متكامل: غرف نوم وصالونات وسفرة ومكاتب بتصنيع متقن وتوصيل وتركيب وضمان. زورونا أو اطلبوا عبر واتساب.">
+  <meta name="theme-color" content="#1E2B27">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="بيت الخشب للأثاث">
+  <meta property="og:description" content="أثاث مصنوع ليعيش معك سنوات. تصنيع حسب الطلب وتوصيل وتركيب وضمان.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231E2B27'/%3E%3Cpath d='M7 20v-6a3 3 0 013-3h12a3 3 0 013 3v6M5 20h22v3H5z' fill='none' stroke='%23B8895A' stroke-width='2'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN: مناسب للتجربة والتسليم السريع. للإنتاج يُفضَّل بناء Tailwind (npx tailwindcss) -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: {
+      ink:'#1E2B27', walnut:'#4A3426', oak:{DEFAULT:'#B8895A',dark:'#8F6538'}, bone:'#F5F2EC', sage:'#8A9A86'
+    }}}}
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json" id="ldjson"></script>
+</head>
+<body class="antialiased">
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:right-2 focus:z-[100] bg-white text-ink px-4 py-2 rounded">تخطَّ إلى المحتوى</a>
+
+<!-- Header -->
+<header id="header" class="fixed inset-x-0 top-0 z-50">
+  <nav class="container mx-auto px-5 h-20 flex items-center justify-between" aria-label="القائمة الرئيسية">
+    <a href="#top" class="logo font-display text-2xl font-bold text-walnut" data-brand></a>
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="#products" class="nav-link text-walnut">المنتجات</a>
+      <a href="#why" class="nav-link text-walnut">لماذا نحن</a>
+      <a href="#gallery" class="nav-link text-walnut">المعرض</a>
+      <a href="#testimonials" class="nav-link text-walnut">آراء العملاء</a>
+      <a href="#faq" class="nav-link text-walnut">الأسئلة الشائعة</a>
+      <a href="#contact" class="nav-link text-walnut">تواصل</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="#contact" class="btn btn-oak hidden sm:inline-flex !py-2.5">اطلب عرض سعر</a>
+      <button id="menuBtn" class="lg:hidden p-2 text-walnut logo" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobileMenu">
+        <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 7h20M3 13h20M3 19h20"/></svg>
+      </button>
+    </div>
+  </nav>
+  <div id="mobileMenu" class="lg:hidden overflow-hidden max-h-0 bg-bone border-b border-walnut/10">
+    <div class="container mx-auto px-5 py-4 flex flex-col gap-1 text-walnut font-medium">
+      <a href="#products" class="py-2.5">المنتجات</a><a href="#why" class="py-2.5">لماذا نحن</a>
+      <a href="#gallery" class="py-2.5">المعرض</a><a href="#testimonials" class="py-2.5">آراء العملاء</a>
+      <a href="#faq" class="py-2.5">الأسئلة الشائعة</a><a href="#contact" class="py-2.5">تواصل معنا</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<!-- Hero -->
+<section id="top" class="hero-bg min-h-[92vh] flex items-center pt-24 pb-16 text-white">
+  <div class="container mx-auto px-5">
+    <div class="max-w-2xl">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">أثاث مصنوع بعناية، ليعيش معك سنوات طويلة</h1>
+      <p class="text-lg md:text-xl text-white/85 mb-9 max-w-xl">غرف نوم وصالونات وسفرة ومكاتب بخامات مختارة وتصنيع حسب مقاسك، مع توصيل وتركيب وضمان.</p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="#products" class="btn btn-oak text-lg">تصفح المنتجات</a>
+        <a data-wa class="btn btn-light text-lg" target="_blank" rel="noopener">اسأل عبر واتساب</a>
+      </div>
+    </div>
+    <dl class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl border-t border-white/20 pt-8">
+      <div><dd class="text-3xl font-display font-bold text-oak"><span data-count="15">0</span>+</dd><dt class="text-sm text-white/75">سنة خبرة</dt></div>
+      <div><dd class="text-3xl font-display font-bold text-oak"><span data-count="3500">0</span>+</dd><dt class="text-sm text-white/75">عميل سعيد</dt></div>
+      <div><dd class="text-3xl font-display font-bold text-oak"><span data-count="400">0</span>+</dd><dt class="text-sm text-white/75">تصميم متاح</dt></div>
+      <div><dd class="text-3xl font-display font-bold text-oak"><span data-count="5">0</span> سنوات</dd><dt class="text-sm text-white/75">ضمان على الهيكل</dt></div>
+    </dl>
+  </div>
+</section>
+
+<!-- Products -->
+<section id="products" class="py-20 md:py-24">
+  <div class="container mx-auto px-5">
+    <div class="mb-10 max-w-xl">
+      <h2 class="text-3xl md:text-4xl font-bold text-walnut mb-3">منتجات المعرض</h2>
+      <div class="rule mb-4"></div>
+      <p class="text-stone-600">اختر القسم، ثم اضغط «اسأل عن السعر» لتصلك التفاصيل والتوفر على واتساب مباشرة.</p>
+    </div>
+    <div id="filters" class="flex flex-wrap gap-3 mb-10" role="group" aria-label="تصفية المنتجات"></div>
+    <div id="productGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+  </div>
+</section>
+
+<!-- Why us -->
+<section id="why" class="py-20 md:py-24 bg-ink text-white">
+  <div class="container mx-auto px-5 grid lg:grid-cols-2 gap-14 items-center">
+    <div>
+      <h2 class="text-3xl md:text-4xl font-bold mb-3">من الخامة إلى غرفة المعيشة، كل خطوة تحت إشرافنا</h2>
+      <div class="rule mb-8"></div>
+      <ul class="space-y-6">
+        <li class="flex gap-4"><span class="mt-1 w-2.5 h-2.5 rounded-full bg-oak shrink-0"></span><div><h3 class="font-bold text-lg">خامات مختارة</h3><p class="text-white/75">أخشاب معالجة وأقمشة مقاومة للاستخدام اليومي، تُفحص قبل التصنيع.</p></div></li>
+        <li class="flex gap-4"><span class="mt-1 w-2.5 h-2.5 rounded-full bg-oak shrink-0"></span><div><h3 class="font-bold text-lg">تصنيع حسب مقاسك</h3><p class="text-white/75">نعدّل المقاس واللون والخامة ليناسب مساحتك وذوقك.</p></div></li>
+        <li class="flex gap-4"><span class="mt-1 w-2.5 h-2.5 rounded-full bg-oak shrink-0"></span><div><h3 class="font-bold text-lg">توصيل وتركيب وضمان</h3><p class="text-white/75">فريق متخصص يركّب في مكانه، وضمان مكتوب على كل قطعة.</p></div></li>
+        <li class="flex gap-4"><span class="mt-1 w-2.5 h-2.5 rounded-full bg-oak shrink-0"></span><div><h3 class="font-bold text-lg">أسعار واضحة وتقسيط</h3><p class="text-white/75">عرض سعر مكتوب بدون مفاجآت، وخطط تقسيط متاحة.</p></div></li>
+      </ul>
+    </div>
+    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80" alt="ركن معيشة بأثاث خشبي دافئ" loading="lazy" class="rounded-xl w-full h-[420px] object-cover">
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="py-20 md:py-24">
+  <div class="container mx-auto px-5">
+    <div class="mb-10 max-w-xl">
+      <h2 class="text-3xl md:text-4xl font-bold text-walnut mb-3">من أعمالنا</h2>
+      <div class="rule"></div>
+    </div>
+    <div id="galleryGrid" class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4"></div>
+  </div>
+</section>
+<dialog id="lightbox" aria-label="عرض الصورة">
+  <button id="lbClose" class="absolute top-3 left-3 bg-white/90 rounded-full w-10 h-10 text-xl" aria-label="إغلاق">×</button>
+  <img id="lbImg" alt="" class="max-h-[90vh] max-w-full rounded-lg">
+</dialog>
+
+<!-- Testimonials -->
+<section id="testimonials" class="py-20 md:py-24 bg-white">
+  <div class="container mx-auto px-5">
+    <div class="mb-10 max-w-xl">
+      <h2 class="text-3xl md:text-4xl font-bold text-walnut mb-3">آراء عملائنا</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="swiper mySwiper pb-12" dir="rtl">
+      <div class="swiper-wrapper">
+        <figure class="swiper-slide bg-bone p-7 rounded-xl border border-walnut/10"><blockquote class="text-lg mb-5">جهّزنا الشقة كاملة من المعرض. المقاسات مضبوطة والتركيب نظيف، والتسليم في الموعد.</blockquote><figcaption><b>أحمد محمود</b><span class="block text-sm text-stone-500">تجهيز شقة</span></figcaption></figure>
+        <figure class="swiper-slide bg-bone p-7 rounded-xl border border-walnut/10"><blockquote class="text-lg mb-5">طلبت غرفة نوم بلون خاص وجاءت مطابقة للصورة تماماً. جودة الخشب واضحة.</blockquote><figcaption><b>سارة عبدالله</b><span class="block text-sm text-stone-500">غرفة نوم</span></figcaption></figure>
+        <figure class="swiper-slide bg-bone p-7 rounded-xl border border-walnut/10"><blockquote class="text-lg mb-5">السعر مكتوب وواضح من البداية، وخدمة ما بعد البيع سريعة.</blockquote><figcaption><b>محمد السيد</b><span class="block text-sm text-stone-500">صالون وسفرة</span></figcaption></figure>
+        <figure class="swiper-slide bg-bone p-7 rounded-xl border border-walnut/10"><blockquote class="text-lg mb-5">أثّثنا مكاتب الشركة بالكامل بجودة ممتازة وفي وقت قياسي.</blockquote><figcaption><b>م. هبة علي</b><span class="block text-sm text-stone-500">مكاتب إدارية</span></figcaption></figure>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-20 md:py-24">
+  <div class="container mx-auto px-5 max-w-3xl">
+    <h2 class="text-3xl md:text-4xl font-bold text-walnut mb-3">الأسئلة الشائعة</h2>
+    <div class="rule mb-8"></div>
+    <div id="faqList" class="space-y-3"></div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-20 md:py-24 bg-ink text-white">
+  <div class="container mx-auto px-5 grid lg:grid-cols-2 gap-12">
+    <div>
+      <h2 class="text-3xl md:text-4xl font-bold mb-3">اطلب عرض سعر</h2>
+      <div class="rule mb-6"></div>
+      <p class="text-white/80 mb-8 max-w-md">اكتب ما تحتاجه وسيصلنا طلبك على واتساب، ونرد عليك بالسعر والمدة.</p>
+      <ul class="space-y-4 text-white/90 mb-8">
+        <li><span class="block text-sm text-white/55">العنوان</span><span data-address></span></li>
+        <li><span class="block text-sm text-white/55">مواعيد العمل</span><span data-hours></span></li>
+        <li><span class="block text-sm text-white/55">الهاتف</span><a data-tel dir="ltr" class="hover:text-oak"></a></li>
+        <li><span class="block text-sm text-white/55">البريد</span><a data-mail class="hover:text-oak"></a></li>
+      </ul>
+      <div id="mapBox" class="rounded-xl overflow-hidden h-56 bg-white/5 border border-white/10 flex items-center justify-center text-white/50 text-sm"></div>
+    </div>
+    <form id="contactForm" class="bg-white/5 border border-white/10 rounded-xl p-6 md:p-8 space-y-5" novalidate>
+      <div><label for="name" class="block text-sm mb-2">الاسم</label><input id="name" class="field" autocomplete="name" required placeholder="اسمك الكريم"></div>
+      <div><label for="phone" class="block text-sm mb-2">رقم الهاتف</label><input id="phone" type="tel" dir="ltr" class="field text-right" autocomplete="tel" required placeholder="01XXXXXXXXX" pattern="[0-9+\s\-]{8,16}"></div>
+      <div><label for="interest" class="block text-sm mb-2">القسم المطلوب</label><select id="interest" class="field"></select></div>
+      <div><label for="message" class="block text-sm mb-2">تفاصيل الطلب</label><textarea id="message" rows="4" class="field" required placeholder="مثال: غرفة نوم، المقاس، اللون المفضل"></textarea></div>
+      <button type="submit" class="btn btn-oak w-full text-lg">أرسل الطلب عبر واتساب</button>
+      <p id="formFeedback" class="text-center text-sm min-h-[1.5rem]" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="bg-[#141d1a] text-white/65 py-10">
+  <div class="container mx-auto px-5 flex flex-col md:flex-row justify-between items-center gap-5 text-sm">
+    <p>© <span id="year"></span> <span data-brand></span>. جميع الحقوق محفوظة.</p>
+    <div class="flex gap-6">
+      <a data-social="facebook" class="hover:text-oak" target="_blank" rel="noopener">فيسبوك</a>
+      <a data-social="instagram" class="hover:text-oak" target="_blank" rel="noopener">إنستجرام</a>
+      <a data-social="tiktok" class="hover:text-oak" target="_blank" rel="noopener">تيك توك</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating buttons -->
+<a data-wa class="fab btn btn-oak !rounded-full shadow-xl" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.800 1.2-.5.1-1 .2-3.3-.7-2.800-1.1-4.600-4-4.700-4.200-.1-.2-1.1-1.500-1.1-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.2.1.3 0 .5l-.4.500c-.1.2-.3.3-.1.600.2.300.8 1.3 1.700 2.100 1.1 1 2.100 1.3 2.400 1.500.3.100.5.100.6-.1l.9-1.1c.2-.3.400-.2.600-.1l1.900.9c.3.100.5.200.5.300.1.2.1.700-.1 1.3z"/></svg>
+  <span class="hidden sm:inline">واتساب</span>
+</a>
+<button id="toTop" class="fixed z-40 bottom-5 left-5 bg-walnut text-white w-11 h-11 rounded-full shadow-lg" aria-label="العودة للأعلى">↑</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+<script src="config.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

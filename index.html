@@ -32,9 +32,9 @@
 
 <!-- Header -->
 <header id="header" class="fixed inset-x-0 top-0 z-50">
-  <nav class="container mx-auto px-5 h-20 flex items-center justify-between" aria-label="القائمة الرئيسية">
-    <a href="#top" class="logo font-display text-2xl font-bold text-walnut" data-brand></a>
-    <div class="hidden lg:flex items-center gap-8">
+  <nav class="w-full max-w-[1700px] mx-auto px-5 lg:px-8 xl:px-14 h-20 flex items-center justify-between gap-6" aria-label="القائمة الرئيسية">
+    <a href="#top" class="logo font-display text-2xl font-bold text-walnut whitespace-nowrap shrink-0" data-brand></a>
+    <div class="hidden lg:flex flex-1 items-center justify-center gap-6 xl:gap-12 2xl:gap-16 whitespace-nowrap">
       <a href="#products" class="nav-link text-walnut">المنتجات</a>
       <a href="#why" class="nav-link text-walnut">لماذا نحن</a>
       <a href="#gallery" class="nav-link text-walnut">المعرض</a>
@@ -42,8 +42,8 @@
       <a href="#faq" class="nav-link text-walnut">الأسئلة الشائعة</a>
       <a href="#contact" class="nav-link text-walnut">تواصل</a>
     </div>
-    <div class="flex items-center gap-3">
-      <a href="#contact" class="btn btn-oak hidden sm:inline-flex !py-2.5">اطلب عرض سعر</a>
+    <div class="flex items-center gap-3 shrink-0">
+      <a href="#contact" class="btn btn-oak hidden sm:inline-flex !py-2.5 whitespace-nowrap">اطلب عرض سعر</a>
       <button id="menuBtn" class="lg:hidden p-2 text-walnut logo" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobileMenu">
         <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 7h20M3 13h20M3 19h20"/></svg>
       </button>
@@ -60,21 +60,22 @@
 
 <main id="main">
 <!-- Hero -->
-<section id="top" class="hero-bg min-h-[92vh] flex items-center pt-24 pb-16 text-white">
+<section id="top" class="hero-bg min-h-[92vh] flex items-center pt-36 md:pt-48 pb-24 text-white">
   <div class="container mx-auto px-5">
     <div class="max-w-2xl">
-      <h1 class="text-4xl md:text-6xl font-bold mb-6">أثاث مصنوع بعناية ليعيش معك سنوات طويلة</h1>
-      <p class="text-lg md:text-xl text-white/85 mb-9 max-w-xl">غرف نوم وصالونات وسفرة ومكاتب بخامات مختارة وتصنيع حسب مقاسك، مع توصيل وتركيب وضمان.</p>
-      <div class="flex flex-col sm:flex-row gap-4">
+      <h1 class="hero-title text-4xl md:text-6xl font-bold mb-8">أثاث مصنوع بعناية ليعيش معك</h1>
+
+      <p class="text-lg md:text-xl text-white/85 mb-12 max-w-xl leading-loose">غرف نوم وصالونات وسفرة ومكاتب بخامات مختارة وتصنيع حسب مقاسك، مع توصيل وتركيب وضمان.</p>
+      <div class="flex flex-col sm:flex-row gap-5">
         <a href="#products" class="btn btn-oak text-lg">تصفح المنتجات</a>
         <a data-wa class="btn btn-light text-lg" target="_blank" rel="noopener">اسأل عبر واتساب</a>
       </div>
     </div>
-    <dl class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl border-t border-white/20 pt-8">
-      <div><dd class="text-3xl font-display font-bold text-oak"><span data-count="15">0</span>+</dd><dt class="text-sm text-white/75">سنة خبرة</dt></div>
-      <div><dd class="text-3xl font-display font-bold text-oak"><span data-count="3500">0</span>+</dd><dt class="text-sm text-white/75">عميل سعيد</dt></div>
-      <div><dd class="text-3xl font-display font-bold text-oak"><span data-count="400">0</span>+</dd><dt class="text-sm text-white/75">تصميم متاح</dt></div>
-      <div><dd class="text-3xl font-display font-bold text-oak"><span data-count="5">0</span> سنوات</dd><dt class="text-sm text-white/75">ضمان على الهيكل</dt></div>
+    <dl class="mt-24 grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10 max-w-3xl border-t border-white/20 pt-10">
+      <div><dd class="text-3xl font-display font-bold text-oak"><span data-count="15">0</span>+</dd><dt class="text-sm text-white/75 mt-1">سنة خبرة</dt></div>
+      <div><dd class="text-3xl font-display font-bold text-oak"><span data-count="3500">0</span>+</dd><dt class="text-sm text-white/75 mt-1">عميل سعيد</dt></div>
+      <div><dd class="text-3xl font-display font-bold text-oak"><span data-count="400">0</span>+</dd><dt class="text-sm text-white/75 mt-1">تصميم متاح</dt></div>
+      <div><dd class="text-3xl font-display font-bold text-oak"><span data-count="5">0</span> سنوات</dd><dt class="text-sm text-white/75 mt-1">ضمان على الهيكل</dt></div>
     </dl>
   </div>
 </section>
@@ -195,7 +196,7 @@
   <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.800 1.2-.5.1-1 .2-3.3-.7-2.800-1.1-4.600-4-4.700-4.200-.1-.2-1.1-1.500-1.1-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.2.1.3 0 .5l-.4.500c-.1.2-.3.3-.1.600.2.300.8 1.3 1.700 2.100 1.1 1 2.100 1.3 2.400 1.500.3.100.5.100.6-.1l.9-1.1c.2-.3.400-.2.600-.1l1.900.9c.3.100.5.200.5.300.1.2.1.700-.1 1.3z"/></svg>
   <span class="hidden sm:inline">واتساب</span>
 </a>
-<button id="toTop" class="fixed z-40 bottom-5 left-5 bg-walnut text-white w-11 h-11 rounded-full shadow-lg" aria-label="العودة للأعلى">↑</button>
+<button id="toTop" class="fixed z-40 bottom-5 right-5 bg-walnut text-white w-11 h-11 rounded-full shadow-lg" aria-label="العودة للأعلى">↑</button>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
